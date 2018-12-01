@@ -31,6 +31,17 @@
 </body>
 <!--SCRIPT-->
 <script>
+    // section-2を取得して文字色を赤色にしている
+    document.getElementById('section-2').style.color = 'red';
+
+    // 子ノードを指定して操作
+    var baseElement = document.getElementById('section-2');
+    var section2node2 = baseElement.childNodes[5];
+    section2node2.innerHTML = '子ノード2は変更されました';
+
+    // 親ノードを取得して操作
+    var parentNode = baseElement.parentNode;
+    parentNode.removeChild(baseElement);
 
 </script>
 </html>
